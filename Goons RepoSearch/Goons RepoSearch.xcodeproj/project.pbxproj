@@ -25,6 +25,9 @@
 		654B61702DAE362500647ECD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B616F2DAE362100647ECD /* NetworkManager.swift */; };
 		654B61722DAE3C2D00647ECD /* RepoSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B61712DAE3C2200647ECD /* RepoSearchAPI.swift */; };
 		654B61742DAE4BC400647ECD /* RepositoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B61732DAE4BC400647ECD /* RepositoryCellViewModel.swift */; };
+		654B61792DAE70DD00647ECD /* RepositoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654B61782DAE70DD00647ECD /* RepositoryDetailViewController.xib */; };
+		654B617A2DAE70DD00647ECD /* RepositoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B61772DAE70DD00647ECD /* RepositoryDetailViewController.swift */; };
+		654B617C2DAE719500647ECD /* RepositoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B617B2DAE718D00647ECD /* RepositoryDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		654B616F2DAE362100647ECD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		654B61712DAE3C2200647ECD /* RepoSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchAPI.swift; sourceTree = "<group>"; };
 		654B61732DAE4BC400647ECD /* RepositoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCellViewModel.swift; sourceTree = "<group>"; };
+		654B61772DAE70DD00647ECD /* RepositoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewController.swift; sourceTree = "<group>"; };
+		654B61782DAE70DD00647ECD /* RepositoryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryDetailViewController.xib; sourceTree = "<group>"; };
+		654B617B2DAE718D00647ECD /* RepositoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailViewModel.swift; sourceTree = "<group>"; };
 		7D7FB064E72DA72EE4E01A42 /* Pods-Goons RepoSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goons RepoSearchTests.release.xcconfig"; path = "Target Support Files/Pods-Goons RepoSearchTests/Pods-Goons RepoSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 		806AB914E95E91A2C101F041 /* Pods-Goons RepoSearch-Goons RepoSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goons RepoSearch-Goons RepoSearchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Goons RepoSearch-Goons RepoSearchUITests/Pods-Goons RepoSearch-Goons RepoSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF89DC180F5FE78942E17604 /* Pods-Goons RepoSearch-Goons RepoSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goons RepoSearch-Goons RepoSearchUITests.release.xcconfig"; path = "Target Support Files/Pods-Goons RepoSearch-Goons RepoSearchUITests/Pods-Goons RepoSearch-Goons RepoSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				654B615E2DAE11A800647ECD /* Model */,
+				654B61752DAE6E1D00647ECD /* View */,
+				654B61762DAE6E2E00647ECD /* ViewModel */,
 			);
 			path = RepoDetail;
 			sourceTree = "<group>";
@@ -255,6 +263,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		654B61752DAE6E1D00647ECD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				654B61772DAE70DD00647ECD /* RepositoryDetailViewController.swift */,
+				654B61782DAE70DD00647ECD /* RepositoryDetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		654B61762DAE6E2E00647ECD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				654B617B2DAE718D00647ECD /* RepositoryDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				654B61792DAE70DD00647ECD /* RepositoryDetailViewController.xib in Resources */,
 				654B61632DAE11FF00647ECD /* RepoListViewController.xib in Resources */,
 				654B61452DAE04E700647ECD /* Assets.xcassets in Resources */,
 				654B61472DAE04E700647ECD /* LaunchScreen.storyboard in Resources */,
@@ -510,10 +536,12 @@
 				654B61642DAE11FF00647ECD /* RepoListViewController.swift in Sources */,
 				654B61702DAE362500647ECD /* NetworkManager.swift in Sources */,
 				654B61722DAE3C2D00647ECD /* RepoSearchAPI.swift in Sources */,
+				654B617A2DAE70DD00647ECD /* RepositoryDetailViewController.swift in Sources */,
 				654B61742DAE4BC400647ECD /* RepositoryCellViewModel.swift in Sources */,
 				654B616C2DAE2C9D00647ECD /* RepoListViewModel.swift in Sources */,
 				654B61492DAE04E700647ECD /* AppDelegate.swift in Sources */,
 				654B616E2DAE2CEF00647ECD /* RepositoriesModel.swift in Sources */,
+				654B617C2DAE719500647ECD /* RepositoryDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

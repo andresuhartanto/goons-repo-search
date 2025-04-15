@@ -20,20 +20,30 @@ struct RepositoryModel: Codable {
     let name: String
     let fullName: String
     let description: String?
+    let language: String?
+    let forksCount: Int
+    let stargazersCount: Int
+    let watchersCount: Int
+    let openIssues: Int
     let owner: OwnerModel
     
     enum CodingKeys: String, CodingKey {
-        case id, name, description, owner
+        case id, name, description, owner, language
         case fullName = "full_name"
+        case forksCount = "forks_count"
+        case stargazersCount = "stargazers_count"
+        case watchersCount = "watchers_count"
+        case openIssues = "open_issues"
     }
 }
 
 struct OwnerModel: Codable {
     let id: Int
     let avatarUrl: String
+    let login: String
     
     enum CodingKeys: String, CodingKey {
-        case id
+        case id, login
         case avatarUrl = "avatar_url"
     }
 }
