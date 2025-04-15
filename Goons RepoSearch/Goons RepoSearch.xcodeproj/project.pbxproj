@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		654B61452DAE04E700647ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 654B613C2DAE04E700647ECD /* Assets.xcassets */; };
+		654B61472DAE04E700647ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654B613F2DAE04E700647ECD /* LaunchScreen.storyboard */; };
+		654B61492DAE04E700647ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B613B2DAE04E700647ECD /* AppDelegate.swift */; };
+		654B614E2DAE04EA00647ECD /* Goons_RepoSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B614C2DAE04EA00647ECD /* Goons_RepoSearchTests.swift */; };
+		654B61522DAE04ED00647ECD /* Goons_RepoSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B614F2DAE04ED00647ECD /* Goons_RepoSearchUITests.swift */; };
+		654B61532DAE04ED00647ECD /* Goons_RepoSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B61502DAE04ED00647ECD /* Goons_RepoSearchUITestsLaunchTests.swift */; };
+		654B61632DAE11FF00647ECD /* RepoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 654B61622DAE11FF00647ECD /* RepoListViewController.xib */; };
+		654B61642DAE11FF00647ECD /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654B61612DAE11FF00647ECD /* RepoListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		654B611E2DAE04DF00647ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 654B60FF2DAE04DD00647ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 654B61062DAE04DD00647ECD;
+			remoteInfo = "Goons RepoSearch";
+		};
+		654B61282DAE04DF00647ECD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 654B60FF2DAE04DD00647ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 654B61062DAE04DD00647ECD;
+			remoteInfo = "Goons RepoSearch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		654B61072DAE04DD00647ECD /* Goons RepoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goons RepoSearch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654B611D2DAE04DF00647ECD /* Goons RepoSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goons RepoSearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654B61272DAE04DF00647ECD /* Goons RepoSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Goons RepoSearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		654B613B2DAE04E700647ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		654B613C2DAE04E700647ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		654B613D2DAE04E700647ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		654B613E2DAE04E700647ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		654B614C2DAE04EA00647ECD /* Goons_RepoSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goons_RepoSearchTests.swift; sourceTree = "<group>"; };
+		654B614F2DAE04ED00647ECD /* Goons_RepoSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goons_RepoSearchUITests.swift; sourceTree = "<group>"; };
+		654B61502DAE04ED00647ECD /* Goons_RepoSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goons_RepoSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		654B61612DAE11FF00647ECD /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		654B61622DAE11FF00647ECD /* RepoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		654B61042DAE04DD00647ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B611A2DAE04DF00647ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B61242DAE04DF00647ECD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		654B60FE2DAE04DD00647ECD = {
+			isa = PBXGroup;
+			children = (
+				654B61442DAE04E700647ECD /* Goons RepoSearch */,
+				654B614D2DAE04EA00647ECD /* Goons RepoSearchTests */,
+				654B61512DAE04ED00647ECD /* Goons RepoSearchUITests */,
+				654B61082DAE04DD00647ECD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		654B61082DAE04DD00647ECD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				654B61072DAE04DD00647ECD /* Goons RepoSearch.app */,
+				654B611D2DAE04DF00647ECD /* Goons RepoSearchTests.xctest */,
+				654B61272DAE04DF00647ECD /* Goons RepoSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		654B61442DAE04E700647ECD /* Goons RepoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				654B613B2DAE04E700647ECD /* AppDelegate.swift */,
+				654B613D2DAE04E700647ECD /* Info.plist */,
+				654B61562DAE072100647ECD /* Networking */,
+				654B61552DAE071B00647ECD /* Pages */,
+				654B61542DAE063900647ECD /* Resources */,
+			);
+			path = "Goons RepoSearch";
+			sourceTree = "<group>";
+		};
+		654B614D2DAE04EA00647ECD /* Goons RepoSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				654B614C2DAE04EA00647ECD /* Goons_RepoSearchTests.swift */,
+			);
+			path = "Goons RepoSearchTests";
+			sourceTree = "<group>";
+		};
+		654B61512DAE04ED00647ECD /* Goons RepoSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				654B614F2DAE04ED00647ECD /* Goons_RepoSearchUITests.swift */,
+				654B61502DAE04ED00647ECD /* Goons_RepoSearchUITestsLaunchTests.swift */,
+			);
+			path = "Goons RepoSearchUITests";
+			sourceTree = "<group>";
+		};
+		654B61542DAE063900647ECD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				654B613C2DAE04E700647ECD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		654B61552DAE071B00647ECD /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				654B61582DAE077D00647ECD /* RepoDetail */,
+				654B61572DAE075000647ECD /* RepoList */,
+				654B613F2DAE04E700647ECD /* LaunchScreen.storyboard */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		654B61562DAE072100647ECD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		654B61572DAE075000647ECD /* RepoList */ = {
+			isa = PBXGroup;
+			children = (
+				654B615B2DAE0A5000647ECD /* Model */,
+				654B61592DAE0A4100647ECD /* View */,
+				654B615A2DAE0A4700647ECD /* ViewModel */,
+			);
+			path = RepoList;
+			sourceTree = "<group>";
+		};
+		654B61582DAE077D00647ECD /* RepoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				654B615E2DAE11A800647ECD /* Model */,
+			);
+			path = RepoDetail;
+			sourceTree = "<group>";
+		};
+		654B61592DAE0A4100647ECD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				654B61612DAE11FF00647ECD /* RepoListViewController.swift */,
+				654B61622DAE11FF00647ECD /* RepoListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		654B615A2DAE0A4700647ECD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		654B615B2DAE0A5000647ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		654B615E2DAE11A800647ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		654B61062DAE04DD00647ECD /* Goons RepoSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654B61302DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearch" */;
+			buildPhases = (
+				654B61032DAE04DD00647ECD /* Sources */,
+				654B61042DAE04DD00647ECD /* Frameworks */,
+				654B61052DAE04DD00647ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Goons RepoSearch";
+			packageProductDependencies = (
+			);
+			productName = "Goons RepoSearch";
+			productReference = 654B61072DAE04DD00647ECD /* Goons RepoSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		654B611C2DAE04DF00647ECD /* Goons RepoSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654B61352DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearchTests" */;
+			buildPhases = (
+				654B61192DAE04DF00647ECD /* Sources */,
+				654B611A2DAE04DF00647ECD /* Frameworks */,
+				654B611B2DAE04DF00647ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				654B611F2DAE04DF00647ECD /* PBXTargetDependency */,
+			);
+			name = "Goons RepoSearchTests";
+			packageProductDependencies = (
+			);
+			productName = "Goons RepoSearchTests";
+			productReference = 654B611D2DAE04DF00647ECD /* Goons RepoSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		654B61262DAE04DF00647ECD /* Goons RepoSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 654B61382DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearchUITests" */;
+			buildPhases = (
+				654B61232DAE04DF00647ECD /* Sources */,
+				654B61242DAE04DF00647ECD /* Frameworks */,
+				654B61252DAE04DF00647ECD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				654B61292DAE04DF00647ECD /* PBXTargetDependency */,
+			);
+			name = "Goons RepoSearchUITests";
+			packageProductDependencies = (
+			);
+			productName = "Goons RepoSearchUITests";
+			productReference = 654B61272DAE04DF00647ECD /* Goons RepoSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		654B60FF2DAE04DD00647ECD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					654B61062DAE04DD00647ECD = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					654B611C2DAE04DF00647ECD = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 654B61062DAE04DD00647ECD;
+					};
+					654B61262DAE04DF00647ECD = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 654B61062DAE04DD00647ECD;
+					};
+				};
+			};
+			buildConfigurationList = 654B61022DAE04DD00647ECD /* Build configuration list for PBXProject "Goons RepoSearch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 654B60FE2DAE04DD00647ECD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 654B61082DAE04DD00647ECD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				654B61062DAE04DD00647ECD /* Goons RepoSearch */,
+				654B611C2DAE04DF00647ECD /* Goons RepoSearchTests */,
+				654B61262DAE04DF00647ECD /* Goons RepoSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		654B61052DAE04DD00647ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654B61632DAE11FF00647ECD /* RepoListViewController.xib in Resources */,
+				654B61452DAE04E700647ECD /* Assets.xcassets in Resources */,
+				654B61472DAE04E700647ECD /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B611B2DAE04DF00647ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B61252DAE04DF00647ECD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		654B61032DAE04DD00647ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654B61642DAE11FF00647ECD /* RepoListViewController.swift in Sources */,
+				654B61492DAE04E700647ECD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B61192DAE04DF00647ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654B614E2DAE04EA00647ECD /* Goons_RepoSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		654B61232DAE04DF00647ECD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654B61522DAE04ED00647ECD /* Goons_RepoSearchUITests.swift in Sources */,
+				654B61532DAE04ED00647ECD /* Goons_RepoSearchUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		654B611F2DAE04DF00647ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 654B61062DAE04DD00647ECD /* Goons RepoSearch */;
+			targetProxy = 654B611E2DAE04DF00647ECD /* PBXContainerItemProxy */;
+		};
+		654B61292DAE04DF00647ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 654B61062DAE04DD00647ECD /* Goons RepoSearch */;
+			targetProxy = 654B61282DAE04DF00647ECD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		654B613F2DAE04E700647ECD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				654B613E2DAE04E700647ECD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		654B61312DAE04DF00647ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Goons RepoSearch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		654B61322DAE04DF00647ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Goons RepoSearch/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		654B61332DAE04DF00647ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		654B61342DAE04DF00647ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		654B61362DAE04DF00647ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goons RepoSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Goons RepoSearch";
+			};
+			name = Debug;
+		};
+		654B61372DAE04DF00647ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goons RepoSearch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Goons RepoSearch";
+			};
+			name = Release;
+		};
+		654B61392DAE04DF00647ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Goons RepoSearch";
+			};
+			name = Debug;
+		};
+		654B613A2DAE04DF00647ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S84D6AKYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goonsdesign.Goons-RepoSearchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Goons RepoSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		654B61022DAE04DD00647ECD /* Build configuration list for PBXProject "Goons RepoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654B61332DAE04DF00647ECD /* Debug */,
+				654B61342DAE04DF00647ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		654B61302DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654B61312DAE04DF00647ECD /* Debug */,
+				654B61322DAE04DF00647ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		654B61352DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654B61362DAE04DF00647ECD /* Debug */,
+				654B61372DAE04DF00647ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		654B61382DAE04DF00647ECD /* Build configuration list for PBXNativeTarget "Goons RepoSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				654B61392DAE04DF00647ECD /* Debug */,
+				654B613A2DAE04DF00647ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 654B60FF2DAE04DD00647ECD /* Project object */;
+}
