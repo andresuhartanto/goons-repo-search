@@ -16,7 +16,7 @@ extension RepoSearchAPI: TargetType {
     
     var path: String {
         switch self {
-        case .searchRepo(query: let query):
+        case .searchRepo:
             return "search/repositories"
         }
     }

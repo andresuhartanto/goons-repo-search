@@ -70,6 +70,14 @@ class RepoListViewModel {
         return RepositoryCellViewModel(repository: repository)
     }
     
+    func repositoryDetailViewModel(at index: Int) -> RepositoryDetailViewModel? {
+        guard let repository = repository(at: index) else {
+            return nil
+        }
+        
+        return RepositoryDetailViewModel(repository: repository)
+    }
+    
     func numberOfRepositories() -> Int {
         return repositories.count
     }

@@ -22,6 +22,7 @@ class RepoListViewController: UIViewController {
         setupNavigationBar()
         setupSearchController()
         setupTableView()
+        setupDismissKeyboardGesture()
     }
 }
 
@@ -53,6 +54,12 @@ extension RepoListViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = false
     }
+    
+    private func setupDismissKeyboardGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapGesture)
+    }
 }
 
 // MARK: - Actions
@@ -65,6 +72,19 @@ extension RepoListViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
+    }
+    
+    @objc private func dismissKeyboard() {
+        searchController.searchBar.resignFirstResponder()
+    }
+}
+
+// MARK: - Navigation
+extension RepoListViewController {
+    private func navigateToDetail(viewModel: RepositoryDetailViewModel) {
+        let repositoryDetailViewController = RepositoryDetailViewController(viewModel: viewModel)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+        self.navigationController?.pushViewController(repositoryDetailViewController, animated: true)
     }
 }
 
@@ -88,6 +108,14 @@ extension RepoListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewModel = viewModel.repositoryDetailViewModel(at: indexPath.row) {
+            searchController.searchBar.resignFirstResponder()
+            
+            navigateToDetail(viewModel: viewModel)
+        }
     }
 }
 
