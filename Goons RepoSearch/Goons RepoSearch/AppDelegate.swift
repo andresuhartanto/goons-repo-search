@@ -29,7 +29,7 @@ extension AppDelegate {
             return
         }
         
-        let repoListViewController = RepoListViewController()
+        let repoListViewController = UINavigationController(rootViewController: RepoListViewController())
 
         window.rootViewController = repoListViewController
         window.makeKeyAndVisible()
