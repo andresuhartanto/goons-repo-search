@@ -8,5 +8,11 @@
 struct RepositoryCellViewModel {
     var name: String
     var description: String?
-    var owner: String
+    var avatarUrl: String?
+    
+    init(repository: RepositoryModel) {
+        self.name = repository.name
+        self.description = repository.description
+        self.avatarUrl = repository.owner.avatarUrl
+    }
 }

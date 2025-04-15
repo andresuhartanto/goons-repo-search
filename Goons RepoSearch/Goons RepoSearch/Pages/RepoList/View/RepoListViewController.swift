@@ -11,11 +11,14 @@ class RepoListViewController: UIViewController {
     @IBOutlet weak var repositoryTableView: UITableView!
     
     private let searchController = UISearchController(searchResultsController: nil)
+    private let refreshControl = UIRefreshControl()
     
     private let viewModel = RepoListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
+        
         setupNavigationBar()
         setupSearchController()
         setupTableView()
@@ -31,9 +34,12 @@ extension RepoListViewController {
     }
     
     private func setupTableView() {
-        repositoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: RepositoryTableViewCell.identifier)
+        repositoryTableView.register(UINib(nibName: RepositoryTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: RepositoryTableViewCell.identifier)
         repositoryTableView.dataSource = self
         repositoryTableView.delegate = self
+        
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        repositoryTableView.addSubview(refreshControl)
     }
     
     private func setupSearchController() {
@@ -49,18 +55,33 @@ extension RepoListViewController {
     }
 }
 
+// MARK: - Actions
+extension RepoListViewController {
+    @objc private func refresh() {
+        viewModel.refresh()
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+}
+
 // MARK: - UITableView Delegate & DataSource
 extension RepoListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRepositories()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableViewCell.identifier) else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryTableViewCell.identifier, for: indexPath) as? RepositoryTableViewCell else {
             fatalError("Could not dequeue repository cell.")
         }
         
-        cell.selectionStyle = .none
+        if let cellViewModel = viewModel.cellViewModel(at: indexPath.row) {
+            cell.bindViewModel(viewModel: cellViewModel)
+        }
         
         return cell
     }
@@ -73,6 +94,19 @@ extension RepoListViewController: UITableViewDataSource, UITableViewDelegate {
 // MARK: - UISearchController Delegate
 extension RepoListViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        print("Seaching for: \(searchController.searchBar.text ?? "No text")")
+        viewModel.searchRepositories(keyword: searchController.searchBar.text)
+    }
+}
+
+// MARK: - RepoList ViewModel Delegate
+extension RepoListViewController: RepoListViewModelDelegate {
+    func didLoadRepositories() {
+        repositoryTableView.reloadData()
+        refreshControl.endRefreshing()
+    }
+    
+    func didFailedToLoadRepositories(error: any Error) {
+        showAlert(title: "Error", message: error.localizedDescription)
+        refreshControl.endRefreshing()
     }
 }

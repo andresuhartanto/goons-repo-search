@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class RepositoryTableViewCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
@@ -16,23 +17,23 @@ class RepositoryTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.selectionStyle = .none
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
         setupCell()
     }
     
     func bindViewModel(viewModel: RepositoryCellViewModel) {
-        print("Setup Cell here")
+        if let avatarUrl = viewModel.avatarUrl {
+            iconImageView.sd_setImage(with: URL(string: avatarUrl))
+        }
+        
+        nameLabel.text = viewModel.name
+        descriptionLabel.text = viewModel.description
     }
 }
 
 // MARK: - Init Setup
 extension RepositoryTableViewCell {
     private func setupCell() {
-        iconImageView.image = nil
+        self.selectionStyle = .none
         iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
     }
 }

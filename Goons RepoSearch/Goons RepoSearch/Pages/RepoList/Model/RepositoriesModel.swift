@@ -8,6 +8,11 @@
 struct RepositoriesModel: Codable {
     let totalCount: Int
     let items: [RepositoryModel]
+    
+    enum CodingKeys: String, CodingKey {
+        case totalCount = "total_count"
+        case items
+    }
 }
 
 struct RepositoryModel: Codable {
@@ -15,9 +20,10 @@ struct RepositoryModel: Codable {
     let name: String
     let fullName: String
     let description: String?
+    let owner: OwnerModel
     
     enum CodingKeys: String, CodingKey {
-        case id, name, description
+        case id, name, description, owner
         case fullName = "full_name"
     }
 }
