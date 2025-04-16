@@ -16,9 +16,14 @@ class RepoListViewModel {
     weak var delegate: RepoListViewModelDelegate?
     
     var repositories: [RepositoryModel] = []
+    private let networkService: NetworkService
     private var keyword: String?
     private var searchWorkItem: DispatchWorkItem?
     private var debounceDelay: TimeInterval = 0.5
+    
+    init(networkService: NetworkService) {
+        self.networkService = networkService
+    }
     
     func searchRepositories(keyword: String?) {
         searchWorkItem?.cancel()
@@ -32,7 +37,7 @@ class RepoListViewModel {
             self?.keyword = keyword
             
             print("Searching for: \(keyword)")
-            NetworkManager.shared.searchRepositories(query: keyword) { [weak self] result in
+            self?.networkService.searchRepositories(query: keyword) { [weak self] result in
                 switch result {
                 case .success(let repositories):
                     self?.repositories = repositories
