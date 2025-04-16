@@ -7,11 +7,12 @@
 
 import Moya
 
-class NetworkManager {
-    static let shared = NetworkManager()
+protocol NetworkService {
+    func searchRepositories(query: String, completion: @escaping (Result<[RepositoryModel], Error>) -> Void)
+}
+
+class NetworkManager: NetworkService {
     private let provider = MoyaProvider<RepoSearchAPI>()
-    
-    private init() {}
     
     func searchRepositories(
         query: String,

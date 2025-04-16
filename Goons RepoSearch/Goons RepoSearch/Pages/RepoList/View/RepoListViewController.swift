@@ -13,7 +13,7 @@ class RepoListViewController: UIViewController {
     private let searchController = UISearchController(searchResultsController: nil)
     private let refreshControl = UIRefreshControl()
     
-    private let viewModel = RepoListViewModel()
+    private let viewModel = RepoListViewModel(networkService: NetworkManager())
     
     override func viewDidLoad() {
         super.viewDidLoad()
